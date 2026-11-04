@@ -398,3 +398,138 @@ body {
     gap: 1.5rem;
   }
 }
+
+/* --- Projects Section --- */
+.projects {
+  background-color: #0D0D14;
+  padding: 6rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.container.projects-container {
+  max-width: 1100px;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 1.5rem;
+  background-color: #0F0F1A;
+  border: 1px solid #1E1E2E;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #4FC3F7;
+  transform: translateY(-4px);
+}
+
+.project-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.project-heading h3 {
+  color: var(--text-main);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.project-badge {
+  flex: 0 0 auto;
+  padding: 2px 8px;
+  background-color: #4FC3F7;
+  border-radius: 999px;
+  color: #000;
+  font-family: var(--font-code);
+  font-size: 11px;
+}
+
+.project-description {
+  margin-bottom: 0.75rem;
+  color: #AAA;
+  font-size: 0.875rem;
+}
+
+.project-result {
+  margin-bottom: 1rem;
+  color: var(--text-main);
+  font-size: 0.8rem;
+}
+
+.project-result span {
+  color: #4FC3F7;
+}
+
+.project-stack {
+  margin-bottom: 1.25rem;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border: 1px solid #2A2A3A;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.project-button-github {
+  background-color: #1A1A24;
+  color: var(--text-main);
+}
+
+.project-button-github:hover {
+  border-color: #4FC3F7;
+}
+
+.project-button-demo {
+  background-color: #4FC3F7;
+  border-color: #4FC3F7;
+  color: #000;
+}
+
+.project-button-demo:hover {
+  background-color: transparent;
+  color: #4FC3F7;
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container.projects-container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
