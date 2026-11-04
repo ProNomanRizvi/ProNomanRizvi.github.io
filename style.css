@@ -561,6 +561,10 @@ body {
   padding: 0;
 }
 
+.project-card-dsa-library {
+  padding: 0;
+}
+
 .project-card-preview {
   display: block;
   width: 100%;
@@ -571,6 +575,10 @@ body {
 }
 
 .project-card-sales-pipeline .project-card-preview {
+  object-position: center;
+}
+
+.project-card-dsa-library .project-card-preview {
   object-position: center;
 }
 
