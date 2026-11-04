@@ -565,6 +565,10 @@ body {
   padding: 0;
 }
 
+.project-card-gradient-descent {
+  padding: 0;
+}
+
 .project-card-preview {
   display: block;
   width: 100%;
@@ -579,6 +583,10 @@ body {
 }
 
 .project-card-dsa-library .project-card-preview {
+  object-position: center;
+}
+
+.project-card-gradient-descent .project-card-preview {
   object-position: center;
 }
 
