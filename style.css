@@ -144,6 +144,16 @@ body {
 }
 
 /* --- Typography & Left Content --- */
+.hero-profile-image {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 24px;
+    border: 2px solid #4FC3F7;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .hero-content h1 {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
