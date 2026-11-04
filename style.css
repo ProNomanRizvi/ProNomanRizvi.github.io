@@ -757,6 +757,17 @@ body {
   font-size: 0.75rem;
 }
 
+.experience-certificate {
+  margin-left: 0.5rem;
+  color: #4FC3F7;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.experience-certificate:hover {
+  text-decoration: underline;
+}
+
 .experience-details {
   min-width: 0;
 }
