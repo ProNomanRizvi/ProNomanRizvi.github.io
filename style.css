@@ -517,6 +517,79 @@ body {
   }
 }
 
+/* --- Certifications Section --- */
+.certifications {
+  background-color: #0A0A0F;
+  padding: 6rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.container.certifications-container {
+  max-width: 1100px;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.certification-list {
+  width: 100%;
+  list-style: none;
+}
+
+.certification-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 16px 0;
+  border-bottom: 1px solid #1E1E2E;
+  transition: background-color 0.2s ease;
+}
+
+.certification-row:last-child {
+  border-bottom: 0;
+}
+
+.certification-row:hover {
+  background-color: #0F0F1A;
+}
+
+.certification-info h3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.certification-info p {
+  color: #888;
+  font-size: 13px;
+}
+
+.certification-link {
+  flex: 0 0 auto;
+  color: #4FC3F7;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.certification-link:hover {
+  text-decoration: underline;
+}
+
+.certification-badge {
+  flex: 0 0 auto;
+  padding: 2px 8px;
+  background-color: #888;
+  border-radius: 999px;
+  color: #000;
+  font-family: var(--font-code);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 /* --- Projects Section --- */
 .projects {
   background-color: #0D0D14;
@@ -692,6 +765,11 @@ body {
 @media (max-width: 600px) {
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .container.certifications-container {
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   .container.projects-container {
