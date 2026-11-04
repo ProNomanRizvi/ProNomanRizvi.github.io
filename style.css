@@ -535,6 +535,7 @@ body {
 
 .projects-grid {
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
   width: 100%;
@@ -550,6 +551,29 @@ body {
   border: 1px solid #1E1E2E;
   border-radius: 8px;
   transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card-credit-risk {
+  padding: 0;
+}
+
+.project-card-preview {
+  display: block;
+  width: 100%;
+  height: 180px;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  object-position: top;
+}
+
+.project-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  min-width: 0;
+  padding: 20px;
 }
 
 .project-card:hover {
