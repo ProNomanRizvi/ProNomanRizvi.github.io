@@ -17,6 +17,37 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll(".nav-link");
     const sections = document.querySelectorAll("#hero, #about, #skills, #projects, #experience, #contact");
 
+    const certificateModal = document.getElementById("certificate-modal");
+    const certificateImage = certificateModal?.querySelector(".certificate-modal-image");
+    const certificateClose = certificateModal?.querySelector(".certificate-modal-close");
+    const certificateLinks = document.querySelectorAll(".view-certificate");
+
+    if (certificateModal && certificateImage && certificateClose) {
+        certificateLinks.forEach(link => {
+            link.addEventListener("click", event => {
+                event.preventDefault();
+                certificateImage.src = link.dataset.cert;
+                certificateModal.classList.add("active");
+            });
+        });
+
+        certificateClose.addEventListener("click", () => {
+            certificateModal.classList.remove("active");
+        });
+
+        certificateModal.addEventListener("click", event => {
+            if (event.target === certificateModal) {
+                certificateModal.classList.remove("active");
+            }
+        });
+
+        document.addEventListener("keydown", event => {
+            if (event.key === "Escape") {
+                certificateModal.classList.remove("active");
+            }
+        });
+    }
+
     if (navbarToggle && navbarLinks) {
         navbarToggle.addEventListener("click", () => {
             const isOpen = navbarToggle.getAttribute("aria-expanded") === "true";

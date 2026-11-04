@@ -768,6 +768,48 @@ body {
   text-decoration: underline;
 }
 
+.certificate-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.certificate-modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+.certificate-modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+}
+
+.certificate-modal-image {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.certificate-modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .experience-details {
   min-width: 0;
 }
