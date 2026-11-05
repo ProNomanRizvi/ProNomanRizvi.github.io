@@ -7,6 +7,12 @@
     <title>Noman Rizvi | ML Engineer</title>
     <meta name="description"
         content="Portfolio of Noman Rizvi, ML Engineer at NeuroFive Solutions building production-ready ML systems.">
+    <meta property="og:title" content="Noman Rizvi | ML Engineer">
+    <meta property="og:description" content="Portfolio of Noman Rizvi, ML Engineer building production-ready ML systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pronomanrizvi.github.io/">
+    <meta property="og:image" content="https://pronomanrizvi.github.io/assets/images/credit-risk-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- Fonts: Inter (Body) & JetBrains Mono (Code/Mono) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +46,8 @@
         </nav>
     </header>
 
-    <main class="hero" id="hero">
+    <main>
+    <section class="hero" id="hero">
         <div class="container">
 
             <!-- Left Content -->
@@ -53,7 +60,7 @@
                 <p class="tagline">I build ML systems that go to production.</p>
 
                 <div class="cta-group">
-                    <a href="#work" class="btn btn-primary">See My Work</a>
+                    <a href="#projects" class="btn btn-primary">See My Work</a>
                     <a href="https://github.com/ProNomanRizvi" target="_blank" rel="noopener noreferrer"
                         class="btn btn-secondary">GitHub &nearr;</a>
                 </div>
@@ -83,8 +90,7 @@
             </div>
 
         </div>
-    </main>
-    <!-- === REPLACE IN index.html (About Section) === -->
+    </section>
 
     <section class="about fade-on-scroll" id="about">
         <div class="container about-container">
@@ -166,43 +172,47 @@
                         <h3>Machine Learning with Python</h3>
                         <p>Cognitive Class</p>
                     </div>
-                    <a class="certification-link" href="#" target="_blank" rel="noopener noreferrer">Show credential <span aria-hidden="true">↗</span></a>
+                    <a class="certification-link"
+                        href="https://courses.cognitiveclass.ai/certificates/21b3ca457e2b4c4b95f670c750bd64e9"
+                        target="_blank" rel="noopener noreferrer">Show credential <span aria-hidden="true">↗</span></a>
                 </li>
                 <li class="certification-row">
                     <div class="certification-info">
                         <h3>AI Fundamentals: Foundations for Understanding AI</h3>
                         <p>IBM</p>
                     </div>
-                    <a class="certification-link" href="#" target="_blank" rel="noopener noreferrer">Show credential <span aria-hidden="true">↗</span></a>
+                    <a class="certification-link"
+                        href="https://www.credly.com/badges/6e11b57d-acfe-404e-98af-01697147bb9e/linked_in_profile"
+                        target="_blank" rel="noopener noreferrer">Show credential <span aria-hidden="true">↗</span></a>
                 </li>
                 <li class="certification-row">
                     <div class="certification-info">
                         <h3>AI Literacy</h3>
                         <p>IBM</p>
                     </div>
-                    <a class="certification-link" href="#" target="_blank" rel="noopener noreferrer">Show credential <span aria-hidden="true">↗</span></a>
+                    <a class="certification-link"
+                        href="https://www.credly.com/badges/9f5bc9bf-fb78-4bb3-b176-f56e5b6a7ace/linked_in_profile"
+                        target="_blank" rel="noopener noreferrer">Show credential <span aria-hidden="true">↗</span></a>
                 </li>
                 <li class="certification-row">
                     <div class="certification-info">
                         <h3>Data Analytics Job Simulation</h3>
                         <p>Deloitte</p>
                     </div>
-                    <a class="certification-link" href="#" target="_blank" rel="noopener noreferrer">Show credential <span aria-hidden="true">↗</span></a>
+                    <a class="certification-link" href="assets/certificates/deloitte-data-analytics-forage.pdf"
+                        target="_blank" rel="noopener noreferrer">View PDF <span aria-hidden="true">↗</span></a>
                 </li>
                 <li class="certification-row">
                     <div class="certification-info">
                         <h3>Data Visualization</h3>
                         <p>Kaggle</p>
                     </div>
-                    <a class="certification-link" href="#" target="_blank" rel="noopener noreferrer">Show credential <span aria-hidden="true">↗</span></a>
+                    <a class="certification-link"
+                        href="https://www.kaggle.com/learn/certification/pronomanrizvi/data-visualization"
+                        target="_blank" rel="noopener noreferrer">Show credential
+                        <span aria-hidden="true">↗</span></a>
                 </li>
-                <li class="certification-row">
-                    <div class="certification-info">
-                        <h3>AI Seekho 2026 &mdash; Google Antigravity National Hackathon</h3>
-                        <p>Google for Developers</p>
-                    </div>
-                    <span class="certification-badge">PARTICIPATION</span>
-                </li>
+
             </ul>
         </div>
     </section>
@@ -222,7 +232,8 @@
                         </div>
                         <p class="project-description">Compared Logistic Regression, Random Forest and XGBoost with
                             preprocessing inside training folds and five-fold cross-validation.</p>
-                        <p class="project-result"><span aria-hidden="true">&rarr;</span> 93.81% accuracy &middot; 0.9512 ROC
+                        <p class="project-result"><span aria-hidden="true">&rarr;</span> 93.81% accuracy &middot; 0.9512
+                            ROC
                             AUC &middot; XGBoost selected by F1</p>
                         <ul class="skill-tags project-stack">
                             <li>Python</li>
@@ -232,9 +243,11 @@
                         </ul>
                         <div class="project-links">
                             <a class="project-button project-button-github"
-                                href="https://github.com/ProNomanRizvi/neurofive-ml-track/tree/main/week_6">GitHub</a>
+                                href="https://github.com/ProNomanRizvi/neurofive-ml-track/tree/main/week_6"
+                                target="_blank" rel="noopener noreferrer">GitHub</a>
                             <a class="project-button project-button-demo"
-                                href="https://neurofive-credit-risk.streamlit.app/">Live Demo</a>
+                                href="https://neurofive-credit-risk.streamlit.app/" target="_blank"
+                                rel="noopener noreferrer">Live Demo</a>
                         </div>
                     </div>
                 </article>
@@ -246,7 +259,8 @@
                         <div class="project-heading">
                             <h3>Sales Data Analysis Pipeline</h3>
                         </div>
-                        <p class="project-description">Used SQLite, Pandas and NumPy to clean and analyze Superstore sales
+                        <p class="project-description">Used SQLite, Pandas and NumPy to clean and analyze Superstore
+                            sales
                             data and produce a report.</p>
                         <p class="project-result"><span aria-hidden="true">&rarr;</span> Runnable pipeline &middot; SQL
                             queries &middot; sample PDF report</p>
@@ -257,7 +271,9 @@
                             <li>SQLite</li>
                         </ul>
                         <div class="project-links">
-                            <a class="project-button project-button-github" href="https://github.com/ProNomanRizvi/sales-data-analysis-pipeline">GitHub</a>
+                            <a class="project-button project-button-github"
+                                href="https://github.com/ProNomanRizvi/sales-data-analysis-pipeline" target="_blank"
+                                rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                 </article>
@@ -269,7 +285,8 @@
                         <div class="project-heading">
                             <h3>DSA Implementation Library</h3>
                         </div>
-                        <p class="project-description">Implemented linked list, stack, queue, binary tree and binary search
+                        <p class="project-description">Implemented linked list, stack, queue, binary tree and binary
+                            search
                             tree in Python.</p>
                         <p class="project-result"><span aria-hidden="true">&rarr;</span> Complexity notes &middot; type
                             hints &middot; pytest tests &middot; GitHub Actions</p>
@@ -279,7 +296,9 @@
                             <li>GitHub Actions</li>
                         </ul>
                         <div class="project-links">
-                            <a class="project-button project-button-github" href="#">GitHub</a>
+                            <a class="project-button project-button-github"
+                                href="https://github.com/ProNomanRizvi/dsa-implementation-library" target="_blank"
+                                rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                 </article>
@@ -301,7 +320,9 @@
                             <li>scikit-learn</li>
                         </ul>
                         <div class="project-links">
-                            <a class="project-button project-button-github" href="#">GitHub</a>
+                            <a class="project-button project-button-github"
+                                href="https://github.com/ProNomanRizvi/eda-and-gradient-descent/tree/main/gradient-descent-from-scratch"
+                                target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                 </article>
@@ -319,7 +340,8 @@
                     <p class="experience-company">NeuroFive Solutions</p>
                     <p class="experience-period">Jul 2026 &ndash; Aug 2026</p>
                     <span class="experience-tag">Remote</span>
-                    <a class="experience-certificate view-certificate" href="#"
+                    <a class="experience-certificate view-certificate"
+                        href="assets/images/certificate-neurofive.png"
                         data-cert="assets/images/certificate-neurofive.png">View Certificate</a>
                 </div>
 
@@ -350,7 +372,8 @@
                     <p class="experience-company">Kivro Solutions</p>
                     <p class="experience-period">Nov 2024 &ndash; Dec 2024</p>
                     <span class="experience-tag">Remote</span>
-                    <a class="experience-certificate view-certificate" href="#"
+                    <a class="experience-certificate view-certificate"
+                        href="assets/images/certificate-kivro.png"
                         data-cert="assets/images/certificate-kivro.png">View Certificate</a>
                 </div>
 
@@ -366,6 +389,7 @@
             </article>
         </div>
     </section>
+    </main>
 
     <section class="contact" id="contact">
         <div class="container contact-container">
@@ -378,10 +402,11 @@
                         aria-hidden="true">GH</span> GitHub</a>
                 <a href="https://linkedin.com/in/pronomanrizvi" target="_blank" rel="noopener noreferrer"><span
                         aria-hidden="true">in</span> LinkedIn</a>
-                <a href="https://kaggle.com/ProNomanRizvi" target="_blank" rel="noopener noreferrer"><span
+                <a href="https://www.kaggle.com/pronomanrizvi" target="_blank" rel="noopener noreferrer"><span
                         aria-hidden="true">K</span> Kaggle</a>
-                <a href="https://huggingface.co/ProNomanRizvi" target="_blank" rel="noopener noreferrer"><span
+                <!-- <a href="https://huggingface.co/ProNomanRizvi" target="_blank" rel="noopener noreferrer"><span
                         aria-hidden="true">🤗</span> Hugging Face</a>
+                -->
             </nav>
 
             <p class="contact-footer">&copy; 2026 Noman Rizvi &mdash; Built with HTML, CSS &amp; JS</p>
@@ -391,7 +416,8 @@
     <div class="certificate-modal" id="certificate-modal" role="dialog" aria-modal="true"
         aria-label="Certificate preview">
         <div class="certificate-modal-content">
-            <button class="certificate-modal-close" type="button" aria-label="Close certificate preview">&times;</button>
+            <button class="certificate-modal-close" type="button"
+                aria-label="Close certificate preview">&times;</button>
             <img class="certificate-modal-image" alt="Certificate">
         </div>
     </div>
