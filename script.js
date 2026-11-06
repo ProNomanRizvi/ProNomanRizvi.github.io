@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navbarToggle = document.querySelector(".navbar-toggle");
     const navbarLinks = document.querySelector(".navbar-links");
     const navLinks = document.querySelectorAll(".nav-link");
-    const sections = document.querySelectorAll("#hero, #about, #skills, #certifications, #projects, #experience, #contact");
+    const sections = document.querySelectorAll("#hero, #about, #skills, #projects, #experience, #contact");
 
     const certificateModal = document.getElementById("certificate-modal");
     const certificateImage = certificateModal?.querySelector(".certificate-modal-image");
