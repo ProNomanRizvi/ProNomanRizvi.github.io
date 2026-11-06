@@ -582,9 +582,27 @@ body {
 .projects-grid {
   display: grid;
   align-items: start;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   width: 100%;
+}
+
+.project-card-featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  flex-direction: unset;
+}
+
+.project-card-featured .project-card-preview {
+  height: 100%;
+  min-height: 220px;
+  border-radius: 8px 0 0 8px;
+}
+
+.project-card-featured .project-card-content {
+  padding: 28px;
 }
 
 .project-card {
