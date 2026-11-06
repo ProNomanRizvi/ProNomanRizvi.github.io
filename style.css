@@ -458,7 +458,28 @@ body {
   transition: border-color 0.2s ease;
 }
 
-.skill-tags li:hover {
+.skills-column:nth-child(1) .skill-tags li {
+  background-color: #0D1B2A;
+  border-color: #1A3A5C;
+  color: #7EC8E3;
+}
+
+.skills-column:nth-child(2) .skill-tags li {
+  background-color: #0D1A14;
+  border-color: #1A3A28;
+  color: #69F0AE;
+}
+
+.skills-column:nth-child(3) .skill-tags li {
+  background-color: #1A1424;
+  border-color: #2A1A3A;
+  color: #CE93D8;
+}
+
+.skill-tags li:hover,
+.skills-column:nth-child(1) .skill-tags li:hover,
+.skills-column:nth-child(2) .skill-tags li:hover,
+.skills-column:nth-child(3) .skill-tags li:hover {
   border-color: #4FC3F7;
 }
 
